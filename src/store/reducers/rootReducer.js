@@ -7,7 +7,8 @@ import { firestoreReducer } from 'redux-firestore'
 //connected with coressponding reducer
 const rootReducer = combineReducers({
     auth: authReducer,
-    project: projectReducer
+    project: projectReducer,
+    firestore: firestoreReducer
 });
 
 export default rootReducer;
