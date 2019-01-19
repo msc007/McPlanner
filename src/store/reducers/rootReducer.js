@@ -1,6 +1,7 @@
 import { combineReducers } from 'redux'
 import authReducer from './authReducer'
 import projectReducer from './projectReducer'
+import { firestoreReducer } from 'redux-firestore'
 
 
 //connected with coressponding reducer
