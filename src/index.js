@@ -20,6 +20,7 @@ const store = createStore(rootReducer,
     )
 );
 
+//This prevent navbar flickering because of the delay acessing firebase auth
 store.firebaseAuthIsReady.then(() => {
     //Provider bind redux and react in our app
     ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
