@@ -7,7 +7,7 @@ function SignedInLinks(props) {
   return (
     <ul className="right">
 			<li><NavLink to="/create">New Proeject</NavLink></li>
-			<li><NavLink to="#" onClick={props.signOut}>Log Out</NavLink></li>
+			<li><NavLink to="/" onClick={props.signOut}>Log Out</NavLink></li>
 			<li><NavLink to="/" className="btn btn-floating pink lighten-1">{props.profile.initials}</NavLink></li>
 		</ul>
   )
